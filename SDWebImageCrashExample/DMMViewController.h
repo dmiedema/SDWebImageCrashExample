@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface DMMViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *topImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *middleImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *bottomImageView;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imageViews;
 
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
 @end
